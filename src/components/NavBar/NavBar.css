@@ -51,6 +51,13 @@ header .boton-navbar {
 	font-size: 1.8rem;
 }
 
+.active {
+	color: rgb(78, 175, 78);
+}
+
+.inactive {
+	color: lightblue;
+}
 
 /* ------------------------------------------------------------- */
 /* Responsive del navbar */

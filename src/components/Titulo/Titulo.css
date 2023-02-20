@@ -1,3 +1,9 @@
 h1{
-   color: black; 
+   color: black;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   margin: 10px;
+   background-color: rgb(228, 179, 89);
+
 }

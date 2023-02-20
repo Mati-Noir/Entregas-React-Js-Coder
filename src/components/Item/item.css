@@ -1,0 +1,17 @@
+.item {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 15px;
+    border: 0.1px solid rgb(18, 18, 19);
+    padding: 10px;
+    margin: 10px;
+}
+
+.imagen-item {
+    width: 420px;
+    height: 250px;
+}
+
+.item-texto{
+    text-decoration: none;
+    color: black;
+}
