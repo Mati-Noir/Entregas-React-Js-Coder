@@ -1,5 +1,5 @@
 import './item.css';
-import React from 'react';
+import React, { useContext } from 'react';
 
 const Item = ({info}) => {
     return (

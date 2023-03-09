@@ -1,11 +1,18 @@
 import './ItemDetail.css';
 import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import { useNavigate } from 'react-router-dom';
+import { useCartContext } from '../../context/CartContext';
 
-const ItemDetail = ({item}) => {
+export const ItemDetail = ({item}) => {
+
+  const navegar = useNavigate();
+
+  const {agregarProducto} = useCartContext();
 
   const onAdd = (cantidad) => {
     console.log(`Agregaste al carrito ${cantidad} unidades`);
+    agregarProducto(item, cantidad);
   }
 
   return(
@@ -17,6 +24,8 @@ const ItemDetail = ({item}) => {
               <h3>{item.categoria}</h3>
 
               <ItemCount inicial={1} stock={10} onAdd={onAdd}/>
+              <button className='Botones-Detalle' onClick={() => navegar('/')}>Seguir Comprando</button>
+              <button className='Botones-Detalle' onClick={() => navegar('/cart')}>Completar mi compra</button>
       </div>
   )
 }
