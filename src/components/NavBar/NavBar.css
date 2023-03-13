@@ -37,6 +37,7 @@ nav a:hover{
 .logo{
     display: flex;
     padding-left: 30px;
+	font-size: 30px;
 }
 
 header .boton-navbar {

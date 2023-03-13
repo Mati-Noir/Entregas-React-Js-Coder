@@ -1,0 +1,14 @@
+.mensaje-carrito-vacio {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.link-vuelta-menu {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(40, 43, 182);
+}

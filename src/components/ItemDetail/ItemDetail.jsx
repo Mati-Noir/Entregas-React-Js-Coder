@@ -24,7 +24,7 @@ export const ItemDetail = ({data}) => {
               <h3>{data.categoria}</h3>
 
               <ItemCount inicial={1} stock={10} onAdd={onAdd}/>
-              <button className='Botones-Detalle' onClick={() => navegar('/')}>Seguir Comprando</button>
+              <button className='Botones-Detalle boton1' onClick={() => navegar('/')}>Seguir Comprando</button>
               <button className='Botones-Detalle' onClick={() => navegar('/cart')}>Completar mi compra</button>
       </div>
   )
