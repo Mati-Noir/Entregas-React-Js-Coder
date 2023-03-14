@@ -20,6 +20,7 @@
     border: 2px solid rgb(0, 132, 150);
     transition-duration: 0.4s;
     background-color: aliceblue;
+    font-size: 16px;
 }
 
 .counter button:hover {

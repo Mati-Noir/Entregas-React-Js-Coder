@@ -3,7 +3,8 @@ h1{
    display: flex;
    justify-content: center;
    align-self: center;
-   margin: 10px;
-   background-color: rgb(202, 195, 183);
-   border-radius: 20px;
+   background-color: rgb(228, 195, 88);
+   -webkit-box-shadow: 0px 0px 36px 0px rgba(135,169,199,1);
+   -moz-box-shadow: 0px 0px 36px 0px rgba(135,169,199,1);
+   box-shadow: 0px 0px 36px 0px rgba(135,169,199,1);
 }

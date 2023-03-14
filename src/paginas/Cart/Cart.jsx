@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css';
+import { useNavigate } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import ItemCart from '../../components/ItemCart/ItemCart';
@@ -8,6 +9,8 @@ import { collection, addDoc, getFirestore, doc, updateDoc } from 'firebase/fires
 
 const Cart = () => {
   const { cart, precioTotal } = useCartContext();
+
+  const navegar = useNavigate();
 
   const [formValue, setFormValue] = useState({
     name: '',
@@ -79,15 +82,15 @@ const Cart = () => {
 
   return (
     <>
-      {
-        cart.map(producto => <ItemCart key={producto.id} producto={producto}/>)
-      }
-      <p>
-        total: {precioTotal()}
-      </p>
+        {
+          cart.map(producto => <ItemCart key={producto.id} producto={producto}/>)
+        }
+        <p className='total'>
+          Total de la compra: AR${precioTotal()}
+        </p>
 
       <div>
-        <form className="cartForm">
+        <form className="formulario-carrito">
           <input
             name="name"
             type="text"
@@ -109,7 +112,8 @@ const Cart = () => {
             value={formValue.email}
             onChange={handleInput}
           />
-          <button onClick={createOrder}>Completar compra</button>
+          <button className='confirmar-compra' onClick={createOrder}>Completar compra</button>
+          <button className='confirmar-compra notReally' onClick={() => navegar('/')}>Seguir Comprando</button>
         </form>
       </div>
 

@@ -1,3 +1,20 @@
+Lista de dependencias:
+    "firebase": "^9.17.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "webpack".
+
+Sin estas dependencias, el proyecto no funcionara al correr el servidor local dentro del visual studio code.
+
+El listado completo se encuentra dentro de "package.json" para mas detalles.
+
+El proyecto busca como objeto la creacion de un ecommerce utilizando React js principalmente junto con css para el diseño de cada uno de los elementos dentro del sitio.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

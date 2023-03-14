@@ -25,7 +25,7 @@ export const ItemListContainer = (props) => {
 
   return (
     <>
-      <Titulo greeting="Bienvenido a la página"/>
+      <Titulo greeting="Productos destacados:"/>
       <ItemList data={data}/>
     </>
   );

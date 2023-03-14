@@ -19,9 +19,11 @@
 
 nav a{
     text-decoration: none;
-    margin: 10px;
+    margin: 25px;
     color: white;
     font-size: 25px;
+	display: flex;
+	text-align: center;
 }
 
 nav a:hover{
@@ -93,9 +95,5 @@ header .boton-navbar {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
-	}
-
-	nav a {
-		font-size: 1.5rem;
 	}
 }

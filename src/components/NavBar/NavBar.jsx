@@ -30,7 +30,6 @@ function Navbar() {
                     isActive ? 'active' : 'inactive'}
                     to="/cart">Carrito <CartWidget/></NavLink>
 
-                <a href="#" >Contacto</a>
                 <button
 					className="boton-navbar boton-cerrar-navbar"
 					onClick={mostrarNavbar}>
