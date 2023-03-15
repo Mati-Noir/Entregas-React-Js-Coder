@@ -14,7 +14,7 @@ El listado completo se encuentra dentro de "package.json" para mas detalles.
 
 El proyecto busca como objeto la creacion de un ecommerce utilizando React js principalmente junto con css para el diseño de cada uno de los elementos dentro del sitio.
 
-[](./GifReactPage.gif){width='800px'}
+![](./GifReactPage.gif){width='800px'}
 
 
 # Getting Started with Create React App
