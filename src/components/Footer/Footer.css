@@ -1,0 +1,25 @@
+.estructura-footer {
+    background-color: rgb(34, 34, 37);
+    height: 150px;
+    margin-top: 10px;
+}
+
+.subtitulo {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sociales {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}

@@ -6,6 +6,7 @@ import ItemDetailContainer from './paginas/ItemDetailContainer/ItemDetailContain
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './paginas/Cart/Cart.jsx';
 import CartProvider from './context/CartContext';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/category/:categoryId" element={<ItemListContainer/>} />
 					<Route path='/cart' element={<Cart />} />
 				</Routes>
+				<Footer/>
 			</CartProvider>
 		</React.Fragment>
 	</BrowserRouter>
